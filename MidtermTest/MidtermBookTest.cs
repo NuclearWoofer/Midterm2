@@ -25,6 +25,13 @@ namespace MidtermTest
             Assert.True(result.Count == 2);
         }
 
+        //[Fact]
+        //public void GetBooksByLastNameTest()
+        //{
+        //    var result = MidtermFunctions.GetBooksByLastName();
+        //    Assert.True(result.Authors.AuthorLast == "Polo");
+        //}
+
 
     }
 }

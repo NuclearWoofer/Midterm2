@@ -28,27 +28,41 @@ namespace Midterm
             }
         }
         //Get all books
-        //public static List<Books> GetAllBooks()
-        //{
-        //    try
-        //    {
-        //        using (var context = new SE407_BookStoreContext())
-        //        {
-        //            return context.Books.ToList();
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e.Message);
-        //        return null;
+        public static List<Books> GetAllBooks()
+        {
+            try
+            {
+                using (var context = new SE407_BookStoreContext())
+                {
+                    return context.Books.ToList();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
 
-        //    }
-        //}
+            }
+        }
 
         //Get all books written by a specific authors last name
+        public static Authors GetBooksByLastName(string AuthorLast)
+        {
+            try
+            {
+                using (var context = new SE407_BookStoreContext())
+                {
+                    return context.Authors.Find(AuthorLast);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
 
+            }
 
-        
+        }
 
     }
 }
