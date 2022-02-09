@@ -5,9 +5,20 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
+using Midterm;
 
 namespace MidtermConsole
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var b = MidtermFunctions.GetAllBooks();
+            var oh = new OutputHelper();
+            oh.WriteToCSV(b);
+
+        }
+    }
     class OutputHelper
     {
         public void WriteToConsole(List<Books> books)
@@ -27,7 +38,7 @@ namespace MidtermConsole
                 csv.WriteRecords(books);
             }
         }
-
+        
 
     }
 }
