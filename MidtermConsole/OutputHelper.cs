@@ -15,7 +15,8 @@ namespace MidtermConsole
         {
             var b = MidtermFunctions.GetAllBooks();
             var oh = new OutputHelper();
-            oh.WriteToCSV(b);
+            //oh.WriteToCSV(b);
+            oh.WriteToConsole(b);
 
         }
     }
