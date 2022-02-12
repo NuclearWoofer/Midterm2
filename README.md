@@ -1,4 +1,4 @@
-# Midterm
+# SE407|| Midterm
 
 The objective of this midterm is to cumulatively demonstrate what you have learned in the course thus far. You will be expected to create a .NET Class Library that Scaffolds the database SE407_Bookstore. This Database had 5 tables (Transactions, Books, Authors, Genres, Customers) and has the same structure and relationships as the SE407_BlockBuster database. The functions I am looking for are to search for a single book by title, search for all the books in the bookstore, search for all the books by Author last name.
 
